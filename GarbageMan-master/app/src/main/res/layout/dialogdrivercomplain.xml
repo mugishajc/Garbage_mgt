@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Complain"
+        android:textAlignment="center"
+        android:background="@drawable/round_button"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:inputType="none"
+        android:id="@+id/cuemail"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textAlignment="center"
+        android:id="@+id/cphne"
+        android:inputType="none"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/ccity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2f3542"
+        android:textColorHint="#2f3542"
+        android:textAlignment="center"
+        android:inputType="none"
+        android:visibility="gone"
+        android:entries="@array/work_arrays"
+        android:hint="@string/Work_prompt"
+        android:prompt="@string/Work_prompt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sector"
+        android:textAlignment="center"
+        android:id="@+id/csector"
+        android:inputType="none"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Street Number"
+        android:textAlignment="center"
+        android:id="@+id/cstno"
+        android:inputType="none"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Driver Email"
+        android:textAlignment="center"
+        android:id="@+id/cdemail"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/cstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cdemail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:entries="@array/complainstatus"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:textAlignment="center"
+        android:inputType="none"
+        android:enabled="false"
+        android:id="@+id/cmessage"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/bindate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:hint="DATE"
+        android:inputType="none"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#2f3542"
+        android:textColorHint="#2f3542" />
+
+    <EditText
+        android:id="@+id/binrepdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Replied Date"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#2f3542"
+        android:textColorHint="#2f3542" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAlignment="center"
+        android:id="@+id/usubmit"
+        android:background="@drawable/round_button"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>

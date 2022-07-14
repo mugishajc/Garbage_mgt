@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <TextView
+        android:id="@+id/labelRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Register Bin"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2f3542"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:id="@+id/bcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelRegister"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:entries="@array/work_arrays"
+        android:hint="@string/Work_prompt"
+        android:prompt="@string/Work_prompt"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/binstno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bcity"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="STREET NUMBER"
+        android:textAlignment="center"
+        android:textColorHint="#2f3542"
+        android:inputType="text"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        />
+    <EditText
+        android:id="@+id/binsector"
+        android:layout_below="@id/binstno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="SECTOR"
+        android:textAlignment="center"
+        android:textColorHint="#2f3542"
+        android:inputType="text"
+        android:maxLength="50"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        />
+
+    <EditText
+        android:id="@+id/binUser"
+        android:layout_below="@id/binsector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="USER EMAIL"
+        android:textAlignment="center"
+        android:textColorHint="#2f3542"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/binUser"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_register_10dp">
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="3"
+            android:background="@drawable/round_button"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonCancelRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_danger"
+            android:layout_weight="3"
+            android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

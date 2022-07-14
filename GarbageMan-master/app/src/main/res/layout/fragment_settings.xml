@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="@color/white">
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Log out"
+            android:paddingStart="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/logout"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_text_7dp"
+            android:layout_marginBottom="@dimen/padding_edit_text_7dp"
+            android:text="Payment"
+            android:paddingStart="@dimen/padding_left_table_row"
+            android:textSize="@dimen/text_size_fragment_personal"
+            android:layout_span="1"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/logout"
+            android:layout_marginStart="@dimen/margin_top_10dp"
+            android:layout_marginEnd="@dimen/margin_top_10dp"/>
+    </TableRow>
+
+    <View android:background="@color/gray"
+        android:layout_width ="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"/>
+
+
+</TableLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f1f2f6"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="My Complain"
+                android:textAllCaps="true"
+                android:textColor="#2f3542"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/cemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/cphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Phone"
+                android:textAlignment="center"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/cworkaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2f3542"
+                android:textAlignment="center"
+                android:textColorHint="#2f3542"
+                android:entries="@array/work_arrays"
+                android:hint="@string/Work_prompt"
+                android:prompt="@string/Work_prompt"/>
+
+            <EditText
+                android:id="@+id/binsector"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="SECTOR"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                />
+            <EditText
+                android:id="@+id/binstreetnumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:hint="STREET NUMBER"
+                android:inputType="text"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                />
+
+            <EditText
+                android:id="@+id/bindate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:hint="DATE"
+                android:inputType="date"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                />
+
+            <EditText
+                android:id="@+id/cmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Your Message"
+                android:textAlignment="center"
+                android:fitsSystemWindows="true"
+                android:breakStrategy="balanced"
+                android:textColor="#2f3542"
+                android:textColorHint="#2f3542"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/csubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#70a1ff"
+                android:elevation="4dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

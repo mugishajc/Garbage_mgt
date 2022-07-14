@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547336775044",
+    "project_id": "garbagemanagement-40136",
+    "storage_bucket": "garbagemanagement-40136.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547336775044:android:d3cbcffd9d8e20f5c729d1",
+        "android_client_info": {
+          "package_name": "com.example.garbagemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547336775044-t57n23omkn5pd85rrri3m9pbu6sbduqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAGHGJw_Zc1uGUwsZyXqIwTW0-So_7A7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547336775044-t57n23omkn5pd85rrri3m9pbu6sbduqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

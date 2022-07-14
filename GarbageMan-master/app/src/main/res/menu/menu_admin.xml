@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24"
+        android:title="Home"
+        />
+
+
+    <item
+        android:id="@+id/complain"
+        android:icon="@drawable/ic_complain_24"
+        android:title="Complain"
+        />
+
+    <item
+        android:id="@+id/driver"
+        android:icon="@drawable/ic_drive_24"
+        android:title="Driver"
+        />
+
+    <item
+        android:id="@+id/users"
+        android:icon="@drawable/ic_users"
+        android:title="User"
+        />
+
+    <item
+        android:id="@+id/Bin"
+        android:icon="@drawable/ic_trash_24"
+        android:title="Bin"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_close_black_24dp"
+        android:title="@string/logout" />
+    </group>
+</menu>

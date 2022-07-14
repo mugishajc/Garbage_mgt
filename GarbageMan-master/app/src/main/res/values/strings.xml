@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">GarbageManagement</string>
+
+    <string name="see_complain">See Complain</string>
+    <string name="view_complain">View Complain</string>
+    <string name="see_driver">See Driver</string>
+    <string name="gender">Sex</string>
+    <string name="phoneNumber">Phone</string>
+    <string name="dateOfBirth">Date of birth</string>
+    <string name="male">male</string>
+    <string name="female">Female</string>
+    <string name="fullName">Full name</string>
+    <string name="logout">logout</string>
+
+    <string name="email_reset_password">Password recovery email</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="repassword">Enter the password</string>
+    <string name="register">Registration</string>
+    <string name="cancel">Cancel</string>
+    <string name="todo">TODO</string>
+    <string name="disabled_users_report">Report</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="car_plate_number">car plate Number</string>
+    <string name="login">Login</string>
+    <string name="address">Address</string>
+    <string name="open">open</string>
+    <string name="close">open</string>
+
+    <string name="choose_picture_avatar">Choose your profile picture</string>
+    <string name="camera_picture_avatar">Take an avatar</string>
+    <string name="choose_picture_background">Choose a cover photo</string>
+    <string name="camera_picture_background">Cover photos</string>
+    <string name="default_avatar">Default avatar</string>
+    <string name="default_background">Default cover image</string>
+    <string name="quit">Cancel</string>
+
+    <string-array name="complainstatus">
+        <item>Incomplete</item>
+        <item>Pending</item>
+    </string-array>
+
+    <string-array name="complainadminstatus">
+        <item>Incomplete</item>
+        <item>Pending</item>
+        <item>Complete</item>
+    </string-array>
+
+    <string-array name="work_arrays">
+        <item>Nyarugenge</item>
+        <item>Kicukiro</item>
+        <item>Gasabo</item>
+    </string-array>
+    <string name="Work_prompt">Choose Work District Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <TextView
+        android:id="@+id/labelRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Register a Driver"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelRegister"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/drawable_email"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextpsd"
+        android:layout_below="@id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:drawableStart="@drawable/drawable_password"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        />
+
+    <EditText
+        android:id="@+id/editRetypepsd"
+        android:layout_below="@id/editTextpsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/repassword"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:drawableStart="@drawable/drawable_password"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextFn"
+        android:layout_below="@id/editRetypepsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/fullName"
+        android:inputType="text"
+        android:maxLength="50"
+        android:drawableStart="@drawable/drawable_name"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp"
+        />
+
+    <Spinner
+        android:id="@+id/workaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFn"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:entries="@array/work_arrays"
+        android:hint="@string/Work_prompt"
+        android:prompt="@string/Work_prompt"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_below="@id/workaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/phoneNumber"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:drawableStart="@drawable/drawable_phone_number"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp" />
+
+
+    <EditText
+        android:id="@+id/editPlaque"
+        android:layout_below="@id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:hint="@string/car_plate_number"
+        android:inputType="text"
+        android:maxLength="11"
+        android:drawableStart="@drawable/ic_baseline_car_24"
+        android:drawablePadding="5dp"
+        android:background="@drawable/selector_background_edit_text"
+        android:padding="@dimen/padding_edit_text_7dp"
+        android:layout_marginTop="@dimen/margin_top_register_10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editPlaque"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top_register_10dp">
+        <Button
+            android:id="@+id/btndriverregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"
+            android:layout_weight="3"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:id="@+id/btncanceldriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_danger"
+            android:layout_weight="3"
+            android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
